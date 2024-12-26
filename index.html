@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>المطبخ الفلسطيني</title>
+</head>
+<body>
+
+<header>
+    <a href="#" class="logo">المطبخ الفلسطيني</a>
+    <nav class="navigation">
+        <a href="#">الرئيسية</a>
+        <a href="#">قائمة الطعام</a>
+        <a href="#">اتصل بنا</a>
+    </nav>
+</header>
+
+<section class="menu">
+    <h2 class="title">قائمة المأكولات</h2>
+    <div class="menu-items">
+        <!-- الصنف الأول -->
+        <div class="menu-item">
+            <img src="images/burger.jpg" alt="برجر">
+            <h3>الفطيرة الذهبية</h3>
+            <p>صدور الفراخ بالقشطة</p>
+            <p><strong>السعر:</strong>200 جنيه</p>
+            <button class="buy-btn" onclick="addToCart('الفطيرة الذهبية', 200)">شراء</button>
+        </div>
+        <!-- الصنف الثاني -->
+        <div class="menu-item">
+            <img src="images/pizza.jpg" alt="بيتزا">
+            <h3>المقلوبة</h3>
+            <p>أرز بسمتي بالفراخ</p>
+            <p><strong>السعر:</strong> 500 جنيه</p>
+            <button class="buy-btn" onclick="addToCart('المقلوبة', 500)">شراء</button>
+        </div>
+        <!-- الصنف الثالث -->
+        <div class="menu-item">
+            <img src="images/dish3.jpg" alt="شاورما">
+            <h3>شاورما الدجاج</h3>
+            <p>شاورما دجاج مع البطاطس</p>
+            <p><strong>السعر:</strong> 120 جنيه</p>
+            <button class="buy-btn" onclick="addToCart('شاورما الدجاج', 100)">شراء</button>
+        </div>
+        <!-- الصنف الرابع -->
+        <div class="menu-item">
+            <img src="images/dish4.jpg" alt="كباب">
+            <h3>الفطيرة التركية</h3>
+            <p>لحمة مفرومة بالذرة</p>
+            <p><strong>السعر:</strong> 80 جنيه</p>
+            <button class="buy-btn" onclick="addToCart('كباب مشوي', 150)">شراء</button>
+        </div>
+        <!-- الصنف الخامس -->
+        <div class="menu-item">
+            <img src="images/dish5.jpg" alt="منسف">
+            <h3>صفيحة الفلافل</h3>
+            <p>فلافل بالطريقة الفلسطينية</p>
+            <p><strong>السعر:</strong> 40 جنيه</p>
+            <button class="buy-btn" onclick="addToCart('منسف', 250)">شراء</button>
+        </div>
+        <!-- الصنف السادس -->
+        <div class="menu-item">
+            <img src="images/dish6.jpg" alt="محمرة">
+            <h3>الخبز الفلسطيني</h3>
+            <p>الخبز الفلسطيني الاصيل</p>
+            <p><strong>السعر:</strong> 4 جنيه</p>
+            <button class="buy-btn" onclick="addToCart('محمرة', 30)">شراء</button>
+        </div>
+        <!-- الصنف السابع -->
+        <div class="menu-item">
+            <img src="images/dish7.jpg" alt="فتوش">
+            <h3>فتوش</h3>
+            <p>سلطة فتوش طازجة</p>
+            <p><strong>السعر:</strong> 50 جنيه</p>
+            <button class="buy-btn" onclick="addToCart('فتوش', 50)">شراء</button>
+        </div>
+        <!-- الصنف الثامن -->
+        <div class="menu-item">
+            <img src="images/dish8.jpg" alt="ورق عنب">
+            <h3>التايلندي</h3>
+            <p>ساندوتش الدجاج الخلطة السحرية</p>
+            <p><strong>السعر:</strong> 120 جنيه</p>
+            <button class="buy-btn" onclick="addToCart('ورق عنب', 120)">شراء</button>
+        </div>
+        <!-- الصنف التاسع -->
+        <div class="menu-item">
+            <img src="images/dish9.jpg" alt="كنافة">
+            <h3>طاجن القرنبيط</h3>
+            <p>طاجن الزهرة اللذيذ</p>
+            <p><strong>السعر:</strong> 50 جنيه</p>
+            <button class="buy-btn" onclick="addToCart('كنافة', 50)">شراء</button>
+        </div>
+        <!-- الصنف العاشر -->
+        <div class="menu-item">
+            <img src="images/dish10.jpg" alt="عصير">
+            <h3>طاجن الكوسا</h3>
+            <p>طاجن الكوسا باللحمة المفرومة</p>
+            <p><strong>السعر:</strong> 45 جنيه</p>
+            <button class="buy-btn" onclick="addToCart('عصير طبيعي', 30)">شراء</button>
+        </div>
+    </div>
+</section>
+
+<!-- نموذج طلب -->
+<section class="order-form">
+    <h2>إتمام الطلب</h2>
+    <form id="orderForm">
+        <label for="customerName">اسم العميل:</label>
+        <input type="text" id="customerName" required>
+        <label for="customerPhone">رقم الهاتف:</label>
+        <input type="tel" id="customerPhone" required>
+        <label for="orderDetails">تفاصيل الطلب:</label>
+        <textarea id="orderDetails" readonly></textarea>
+        <button type="submit">إرسال الطلب</button>
+    </form>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
